@@ -1,5 +1,5 @@
 Template.hackerList.onCreated(function (){
-	Template.instance().subscribe('hackers');	
+	Meteor.subscribe('hackers');	
 });
 
 
