@@ -1,4 +1,7 @@
-Meteor.subscribe('hackers');
+Template.hackerList.onCreated(function (){
+	Template.instance().subscribe('hackers');	
+});
+
 
 Template.hackerList.helpers({
 	Hackers(){
